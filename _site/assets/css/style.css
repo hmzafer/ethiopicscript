@@ -1,0 +1,284 @@
+
+a { color:black; }
+a:hover { color:#777; }
+
+.btn-primary {
+  background:#4B4734; 
+  color:white !important;
+  border:0px;
+  border-radius: 10px 10px 10px 0px;
+}
+.dropcap {
+  color: #000;
+  float: left;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 12px;
+  padding-left: 3px;
+}
+
+.cinzel-400 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+.cinzel-900 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight:900;
+  font-style: normal;
+}
+
+
+/*
+@font-face {
+    font-family: 'Brana';
+    src: url("../fonts/Brana-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
+.navbar-toggle .icon-bar {
+  background: black;
+}
+.navbar-nav > li > a {
+  background: #c9c5b2;
+}
+.nav > li > a.active {
+  background-color: #eee;
+}
+
+
+body {
+    /*font-family: 'Brana', sans-serif;
+    font-family: 'Times New Roman', Times, serif;*/
+    font-family: 'Arial', no-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size:14pt;
+    position:relative;
+    background:#FFFFF9;
+}
+
+p { line-height: 1.6em; }
+
+li { margin-bottom: 0.2em; }
+
+.navbar-collapse li {
+  background: #e6e1cb;
+  z-index: 9;
+}
+
+#header { /* background:#EFEFEB;background:#c8c3ad;  background: #e6e1cb;*/
+  background:#c9c5b2;
+height: 100px;
+  border-bottom: solid 1px #beb9a3; }
+
+#footersection {
+  background:#c8c3ad;;
+  padding: 3em 0;
+  margin-top: 3em;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight:600;
+  font-style: normal;  
+}
+
+h2.page-title { font-size:85px; }
+
+h2.page-title span { font-family: 'Arial', no-serif; }
+
+h2.variants { font-size:65px; color:grey;padding: 0em 0.2em;}
+h2.variants a { color:#DDD;}
+h2.variants.active { color:#000; }
+
+#nextprev { display:flex;justify-content:space-between; }
+
+#animation-viewer {}
+#animation-viewer .toolbar { 
+  text-align:left;
+}
+#animation-viewer .animation { text-align:center;}
+
+audio { width:100%; margin:1em 0;border-radius: 10px; }
+
+.btn {
+  color:black;
+  text-decoration:none;
+  font-size:1.1em;
+  padding: 0.2em 0.6em;
+  margin:3px;
+  }
+.btn:hover { 
+  /*
+  background:#165d8b;
+  color:white; 
+  */
+  color:grey;
+  }
+.btn.active, .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background:#555;
+  color:white !important;
+  color:#165d8b;
+}
+
+
+.icon { height: 32px; }
+
+.flashcard-icon { height:32px; margin: 12px; }
+
+.gallery {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.gallery-nowrap {
+  display:flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+}
+.collection {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+}
+.collection-group {
+  margin:2em 0;
+}
+.collection-wrap {
+width: 600px;
+  margin: 0px auto;
+  max-width: 100%;
+}
+
+.tile {
+  width: 146px;
+  min-width:146px;
+  height: 146px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  font-size:2.8em;
+  text-align:center;
+  line-height:0.8em;
+  border:solid 1px #efefef;
+  text-decoration:none;
+  background:#ffffff;
+  box-shadow: 0 .1em .2em rgba(0,0,0,0.05);
+}
+a.tile { color: darkblue; }
+.tile-title{ font-size: 0.28em; color: #AAA; }
+.tile:hover { background:#EEE;text-decoration:none; }
+.tile.hilite { background:#DDD; }
+.tile-alt { font-size:5em; }
+
+
+#image-gallery {
+  margin:2em 0;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.image-gallery-tile {
+  width: 32%;
+  text-align:center;
+}
+.image-gallery-tile-inner {
+  border: solid 1px #EEE;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  height: 140px;
+  border-radius:3px;
+}
+.image-gallery-tile-inner img {
+  max-height:120px;
+  max-width:120px;
+  margin:10px auto;
+  height:120px;
+  width:auto;
+}
+
+
+.img-gallery img { height:80px;margin:4px 4px 4px 0; }
+
+
+#menu li a {
+  padding: 0.3em;
+}
+#menu li a.active {
+  background: red;
+  color: white;
+}
+
+.in-page-menu { margin:1em 0;text-align:center; }
+.in-page-menu ul { display:inline; }
+.in-page-menu ul li { display: inline-block;list-style-type:none;}
+.in-page-menu ul li a {
+
+}
+
+
+/********************* homepage ****************/
+
+  #big-menu h2 {
+    color:white;
+    font-weight:bold;
+    text-shadow: 0 0 10px black;
+    font-size:1.75em;
+  }
+  .big-menu-block {
+  width:100%;
+  height:8em;
+  padding:1em 1.6em;
+  background-position:center;
+  background-size:cover;
+  box-shadow: 0 .1em .2em rgba(0,0,0,0.5);
+  
+  }
+  @media only screen and (max-width: 770px) {
+    .big-menu-block { height:200px; }
+  }  
+  @media only screen and (max-width: 900px) {
+    h5 {  }
+  }  
+
+
+/******************* syllabary page ***************/
+.scroll-window {
+  overflow-y: scroll;
+}
+#variant-menu {
+  display:flex;
+  flex-wrap:wrap;
+  text-align:right;
+  justify-content:right;
+  font-size:3em;
+}
+#variant-menu a {
+  color: #DDD;
+  padding: 0.2em;
+}
+#variant-menu a.active {
+  color: #000;
+}

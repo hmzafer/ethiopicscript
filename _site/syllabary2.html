@@ -1,0 +1,2990 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Ge'ez Alphabet</title>
+ 
+  <!--<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/ethiopic/assets/js/jquery.min.js"></script>
+  <script src="/ethiopic/assets/js/bootstrap.min.js"></script>
+  <script src="/ethiopic/assets/js/script.js"></script>
+
+  
+  
+  <!--<link rel="stylesheet" href="/ethiopic/assets/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/ethiopic/assets/css/style.css?v=0.1" type="text/css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/ethiopic/assets/images/favicon.png">
+
+  <link rel="stylesheet" href="/ethiopic/assets/css/flashcards.css">
+  
+  <script>
+  var cards = {"All":[{"ID":1,"f":"ሀ","b":"ha"},{"ID":2,"f":"ሁ","b":"hu"},{"ID":3,"f":"ሂ","b":"hi"},{"ID":4,"f":"ሃ","b":"hā"},{"ID":5,"f":"ሄ","b":"he"},{"ID":6,"f":"ህ","b":"hə"},{"ID":7,"f":"ሆ","b":"ho"},{"ID":8,"f":"ለ","b":"la"},{"ID":9,"f":"ሉ","b":"lu"},{"ID":10,"f":"ሊ","b":"li"},{"ID":11,"f":"ላ","b":"lā"},{"ID":12,"f":"ሌ","b":"le"},{"ID":13,"f":"ል","b":"lə"},{"ID":14,"f":"ሎ","b":"lo"},{"ID":15,"f":"ሐ","b":"ḥə"},{"ID":16,"f":"ሑ","b":"ḥu"},{"ID":17,"f":"ሒ","b":"ḥi"},{"ID":18,"f":"ሓ","b":"ḥā"},{"ID":19,"f":"ሔ","b":"ḥe"},{"ID":20,"f":"ሕ","b":"ḥə"},{"ID":21,"f":"ሖ","b":"ḥo"},{"ID":22,"f":"መ","b":"ma"},{"ID":23,"f":"ሙ","b":"mu"},{"ID":24,"f":"ሚ","b":"mi"},{"ID":25,"f":"ማ","b":"mā"},{"ID":26,"f":"ሜ","b":"me"},{"ID":27,"f":"ም","b":"mə"},{"ID":28,"f":"ሞ","b":"mo"},{"ID":29,"f":"ሠ","b":"ša"},{"ID":30,"f":"ሡ","b":"šu"},{"ID":31,"f":"ሢ","b":"ši"},{"ID":32,"f":"ሣ","b":"šā"},{"ID":33,"f":"ሤ","b":"še"},{"ID":34,"f":"ሥ","b":"šə"},{"ID":35,"f":"ሦ","b":"šo"},{"ID":36,"f":"ረ","b":"ra"},{"ID":37,"f":"ሩ","b":"ru"},{"ID":38,"f":"ሪ","b":"ri"},{"ID":39,"f":"ራ","b":"rā"},{"ID":40,"f":"ሬ","b":"re"},{"ID":41,"f":"ር","b":"rə"},{"ID":42,"f":"ሮ","b":"ro"},{"ID":43,"f":"ሰ","b":"sa"},{"ID":44,"f":"ሱ","b":"su"},{"ID":45,"f":"ሲ","b":"si"},{"ID":46,"f":"ሳ","b":"sā"},{"ID":47,"f":"ሴ","b":"se"},{"ID":48,"f":"ስ","b":"sə"},{"ID":49,"f":"ሶ","b":"so"},{"ID":50,"f":"ቀ","b":"qa"},{"ID":51,"f":"ቁ","b":"qu"},{"ID":52,"f":"ቂ","b":"qi"},{"ID":53,"f":"ቃ","b":"qā"},{"ID":54,"f":"ቄ","b":"qe"},{"ID":55,"f":"ቅ","b":"qə"},{"ID":56,"f":"ቆ","b":"qo"},{"ID":57,"f":"በ","b":"ba"},{"ID":58,"f":"ቡ","b":"bu"},{"ID":59,"f":"ቢ","b":"bi"},{"ID":60,"f":"ባ","b":"bā"},{"ID":61,"f":"ቤ","b":"be"},{"ID":62,"f":"ብ","b":"bə"},{"ID":63,"f":"ቦ","b":"bo"},{"ID":64,"f":"ተ","b":"ta"},{"ID":65,"f":"ቱ","b":"tu"},{"ID":66,"f":"ቲ","b":"ti"},{"ID":67,"f":"ታ","b":"tā"},{"ID":68,"f":"ቴ","b":"te"},{"ID":69,"f":"ት","b":"tə"},{"ID":70,"f":"ቶ","b":"to"},{"ID":71,"f":"ኀ","b":"ḫa"},{"ID":72,"f":"ኁ","b":"ḫu"},{"ID":73,"f":"ኂ","b":"ḫi"},{"ID":74,"f":"ኃ","b":"ḫa"},{"ID":75,"f":"ኄ","b":"ḫe"},{"ID":76,"f":"ኅ","b":"ḫə"},{"ID":77,"f":"ኆ","b":"ḫo"},{"ID":78,"f":"ነ","b":"na"},{"ID":79,"f":"ኑ","b":"nu"},{"ID":80,"f":"ኒ","b":"ni"},{"ID":81,"f":"ና","b":"nā"},{"ID":82,"f":"ኔ","b":"ne"},{"ID":83,"f":"ን","b":"nə"},{"ID":84,"f":"ኖ","b":"no"},{"ID":85,"f":"አ","b":"ʾa"},{"ID":86,"f":"ኡ","b":"ʾu"},{"ID":87,"f":"ኢ","b":"ʾi"},{"ID":88,"f":"ኣ","b":"ʾa"},{"ID":89,"f":"ኤ","b":"ʾe"},{"ID":90,"f":"እ","b":"ʾə"},{"ID":91,"f":"ኦ","b":"ʾo"},{"ID":92,"f":"ከ","b":"ka"},{"ID":93,"f":"ኩ","b":"ku"},{"ID":94,"f":"ኪ","b":"ki"},{"ID":95,"f":"ካ","b":"kā"},{"ID":96,"f":"ኬ","b":"ke"},{"ID":97,"f":"ክ","b":"kə"},{"ID":98,"f":"ኮ","b":"ko"},{"ID":99,"f":"ወ","b":"wa"},{"ID":100,"f":"ዉ","b":"wu"},{"ID":101,"f":"ዊ","b":"wi"},{"ID":102,"f":"ዋ","b":"wā"},{"ID":103,"f":"ዌ","b":"we"},{"ID":104,"f":"ው","b":"wə"},{"ID":105,"f":"ዎ","b":"wo"},{"ID":106,"f":"ዐ","b":"ʿa"},{"ID":107,"f":"ዑ","b":"ʿu"},{"ID":108,"f":"ዒ","b":"ʿi"},{"ID":109,"f":"ዓ","b":"ʿa"},{"ID":110,"f":"ዔ","b":"ʿe"},{"ID":111,"f":"ዕ","b":"ʿə"},{"ID":112,"f":"ዖ","b":"ʿo"},{"ID":113,"f":"ዘ","b":"za"},{"ID":114,"f":"ዙ","b":"zu"},{"ID":115,"f":"ዚ","b":"zi"},{"ID":116,"f":"ዛ","b":"zā"},{"ID":117,"f":"ዜ","b":"ze"},{"ID":118,"f":"ዝ","b":"zə"},{"ID":119,"f":"ዞ","b":"zo"},{"ID":120,"f":"የ","b":"ya"},{"ID":121,"f":"ዩ","b":"yu"},{"ID":122,"f":"ዪ","b":"yi"},{"ID":123,"f":"ያ","b":"yā"},{"ID":124,"f":"ዬ","b":"ye"},{"ID":125,"f":"ይ","b":"yə"},{"ID":126,"f":"ዮ","b":"yo"},{"ID":127,"f":"ደ","b":"da"},{"ID":128,"f":"ዱ","b":"du"},{"ID":129,"f":"ዲ","b":"di"},{"ID":130,"f":"ዳ","b":"dā"},{"ID":131,"f":"ዴ","b":"de"},{"ID":132,"f":"ድ","b":"də"},{"ID":133,"f":"ዶ","b":"do"},{"ID":134,"f":"ገ","b":"ga"},{"ID":135,"f":"ጉ","b":"gu"},{"ID":136,"f":"ጊ","b":"gi"},{"ID":137,"f":"ጋ","b":"gā"},{"ID":138,"f":"ጌ","b":"ge"},{"ID":139,"f":"ግ","b":"gə"},{"ID":140,"f":"ጎ","b":"go"},{"ID":141,"f":"ጠ","b":"ṭa"},{"ID":142,"f":"ጡ","b":"ṭu"},{"ID":143,"f":"ጢ","b":"ṭi"},{"ID":144,"f":"ጣ","b":"ṭā"},{"ID":145,"f":"ጤ","b":"ṭe"},{"ID":146,"f":"ጥ","b":"ṭə"},{"ID":147,"f":"ጦ","b":"ṭo"},{"ID":148,"f":"ጰ","b":"p̣a"},{"ID":149,"f":"ጱ","b":"p̣u"},{"ID":150,"f":"ጲ","b":"p̣i"},{"ID":151,"f":"ጳ","b":"p̣ā"},{"ID":152,"f":"ጴ","b":"p̣e"},{"ID":153,"f":"ጵ","b":"p̣ə"},{"ID":154,"f":"ጶ","b":"p̣o"},{"ID":155,"f":"ጸ","b":"ṣa"},{"ID":156,"f":"ጹ","b":"ṣu"},{"ID":157,"f":"ጺ","b":"ṣi"},{"ID":158,"f":"ጻ","b":"ṣā"},{"ID":159,"f":"ጼ","b":"ṣe"},{"ID":160,"f":"ጽ","b":"ṣə"},{"ID":161,"f":"ጾ","b":"ṣo"},{"ID":162,"f":"ፀ","b":"ḍa"},{"ID":163,"f":"ፁ","b":"ḍu"},{"ID":164,"f":"ፂ","b":"ḍi"},{"ID":165,"f":"ፃ","b":"ḍā"},{"ID":166,"f":"ፄ","b":"ḍe"},{"ID":167,"f":"ፅ","b":"ḍə"},{"ID":168,"f":"ፆ","b":"ḍo"},{"ID":169,"f":"ፈ","b":"fa"},{"ID":170,"f":"ፉ","b":"fu"},{"ID":171,"f":"ፊ","b":"fi"},{"ID":172,"f":"ፋ","b":"fā"},{"ID":173,"f":"ፌ","b":"fe"},{"ID":174,"f":"ፍ","b":"fə"},{"ID":175,"f":"ፎ","b":"fo"},{"ID":176,"f":"ፐ","b":"pa"},{"ID":177,"f":"ፑ","b":"pu"},{"ID":178,"f":"ፒ","b":"pi"},{"ID":179,"f":"ፓ","b":"pā"},{"ID":180,"f":"ፔ","b":"pe"},{"ID":181,"f":"ፕ","b":"pə"},{"ID":182,"f":"ፖ","b":"po"},{"ID":183,"f":"፡","b":"word break"},{"ID":184,"f":"።","b":"sent. break"},{"ID":185,"f":"፨","b":"para. break"},{"ID":186,"f":"፩","b":"1"},{"ID":187,"f":"፪","b":"2"},{"ID":188,"f":"፫","b":"3"},{"ID":189,"f":"፬","b":"4"},{"ID":190,"f":"፭","b":"5"},{"ID":191,"f":"፮","b":"6"},{"ID":192,"f":"፯","b":"7"},{"ID":193,"f":"፰","b":"8"},{"ID":194,"f":"፱","b":"9"},{"ID":195,"f":"፲","b":"10"},{"ID":196,"f":"፳","b":"20"},{"ID":197,"f":"፴","b":"30"},{"ID":198,"f":"፵","b":"40"},{"ID":199,"f":"፶","b":"50"},{"ID":200,"f":"፷","b":"60"},{"ID":201,"f":"፸","b":"70"},{"ID":202,"f":"፹","b":"80"},{"ID":203,"f":"፺","b":"90"},{"ID":204,"f":"፻","b":"100"},{"ID":205,"f":"፼","b":"10000"}],"Letters":[{"ID":1,"f":"ሀ","b":"ha"},{"ID":8,"f":"ለ","b":"la"},{"ID":15,"f":"ሐ","b":"ḥə"},{"ID":22,"f":"መ","b":"ma"},{"ID":29,"f":"ሠ","b":"ša"},{"ID":36,"f":"ረ","b":"ra"},{"ID":43,"f":"ሰ","b":"sa"},{"ID":50,"f":"ቀ","b":"qa"},{"ID":57,"f":"በ","b":"ba"},{"ID":64,"f":"ተ","b":"ta"},{"ID":71,"f":"ኀ","b":"ḫa"},{"ID":78,"f":"ነ","b":"na"},{"ID":85,"f":"አ","b":"ʾa"},{"ID":92,"f":"ከ","b":"ka"},{"ID":99,"f":"ወ","b":"wa"},{"ID":106,"f":"ዐ","b":"ʿa"},{"ID":113,"f":"ዘ","b":"za"},{"ID":120,"f":"የ","b":"ya"},{"ID":127,"f":"ደ","b":"da"},{"ID":134,"f":"ገ","b":"ga"},{"ID":141,"f":"ጠ","b":"ṭa"},{"ID":148,"f":"ጰ","b":"p̣a"},{"ID":155,"f":"ጸ","b":"ṣa"},{"ID":162,"f":"ፀ","b":"ḍa"},{"ID":169,"f":"ፈ","b":"fa"},{"ID":176,"f":"ፐ","b":"pa"}],"Syllables":[{"ID":1,"f":"ሀ","b":"ha"},{"ID":2,"f":"ሁ","b":"hu"},{"ID":3,"f":"ሂ","b":"hi"},{"ID":4,"f":"ሃ","b":"hā"},{"ID":5,"f":"ሄ","b":"he"},{"ID":6,"f":"ህ","b":"hə"},{"ID":7,"f":"ሆ","b":"ho"},{"ID":8,"f":"ለ","b":"la"},{"ID":9,"f":"ሉ","b":"lu"},{"ID":10,"f":"ሊ","b":"li"},{"ID":11,"f":"ላ","b":"lā"},{"ID":12,"f":"ሌ","b":"le"},{"ID":13,"f":"ል","b":"lə"},{"ID":14,"f":"ሎ","b":"lo"},{"ID":15,"f":"ሐ","b":"ḥə"},{"ID":16,"f":"ሑ","b":"ḥu"},{"ID":17,"f":"ሒ","b":"ḥi"},{"ID":18,"f":"ሓ","b":"ḥā"},{"ID":19,"f":"ሔ","b":"ḥe"},{"ID":20,"f":"ሕ","b":"ḥə"},{"ID":21,"f":"ሖ","b":"ḥo"},{"ID":22,"f":"መ","b":"ma"},{"ID":23,"f":"ሙ","b":"mu"},{"ID":24,"f":"ሚ","b":"mi"},{"ID":25,"f":"ማ","b":"mā"},{"ID":26,"f":"ሜ","b":"me"},{"ID":27,"f":"ም","b":"mə"},{"ID":28,"f":"ሞ","b":"mo"},{"ID":29,"f":"ሠ","b":"ša"},{"ID":30,"f":"ሡ","b":"šu"},{"ID":31,"f":"ሢ","b":"ši"},{"ID":32,"f":"ሣ","b":"šā"},{"ID":33,"f":"ሤ","b":"še"},{"ID":34,"f":"ሥ","b":"šə"},{"ID":35,"f":"ሦ","b":"šo"},{"ID":36,"f":"ረ","b":"ra"},{"ID":37,"f":"ሩ","b":"ru"},{"ID":38,"f":"ሪ","b":"ri"},{"ID":39,"f":"ራ","b":"rā"},{"ID":40,"f":"ሬ","b":"re"},{"ID":41,"f":"ር","b":"rə"},{"ID":42,"f":"ሮ","b":"ro"},{"ID":43,"f":"ሰ","b":"sa"},{"ID":44,"f":"ሱ","b":"su"},{"ID":45,"f":"ሲ","b":"si"},{"ID":46,"f":"ሳ","b":"sā"},{"ID":47,"f":"ሴ","b":"se"},{"ID":48,"f":"ስ","b":"sə"},{"ID":49,"f":"ሶ","b":"so"},{"ID":50,"f":"ቀ","b":"qa"},{"ID":51,"f":"ቁ","b":"qu"},{"ID":52,"f":"ቂ","b":"qi"},{"ID":53,"f":"ቃ","b":"qā"},{"ID":54,"f":"ቄ","b":"qe"},{"ID":55,"f":"ቅ","b":"qə"},{"ID":56,"f":"ቆ","b":"qo"},{"ID":57,"f":"በ","b":"ba"},{"ID":58,"f":"ቡ","b":"bu"},{"ID":59,"f":"ቢ","b":"bi"},{"ID":60,"f":"ባ","b":"bā"},{"ID":61,"f":"ቤ","b":"be"},{"ID":62,"f":"ብ","b":"bə"},{"ID":63,"f":"ቦ","b":"bo"},{"ID":64,"f":"ተ","b":"ta"},{"ID":65,"f":"ቱ","b":"tu"},{"ID":66,"f":"ቲ","b":"ti"},{"ID":67,"f":"ታ","b":"tā"},{"ID":68,"f":"ቴ","b":"te"},{"ID":69,"f":"ት","b":"tə"},{"ID":70,"f":"ቶ","b":"to"},{"ID":71,"f":"ኀ","b":"ḫa"},{"ID":72,"f":"ኁ","b":"ḫu"},{"ID":73,"f":"ኂ","b":"ḫi"},{"ID":74,"f":"ኃ","b":"ḫa"},{"ID":75,"f":"ኄ","b":"ḫe"},{"ID":76,"f":"ኅ","b":"ḫə"},{"ID":77,"f":"ኆ","b":"ḫo"},{"ID":78,"f":"ነ","b":"na"},{"ID":79,"f":"ኑ","b":"nu"},{"ID":80,"f":"ኒ","b":"ni"},{"ID":81,"f":"ና","b":"nā"},{"ID":82,"f":"ኔ","b":"ne"},{"ID":83,"f":"ን","b":"nə"},{"ID":84,"f":"ኖ","b":"no"},{"ID":85,"f":"አ","b":"ʾa"},{"ID":86,"f":"ኡ","b":"ʾu"},{"ID":87,"f":"ኢ","b":"ʾi"},{"ID":88,"f":"ኣ","b":"ʾa"},{"ID":89,"f":"ኤ","b":"ʾe"},{"ID":90,"f":"እ","b":"ʾə"},{"ID":91,"f":"ኦ","b":"ʾo"},{"ID":92,"f":"ከ","b":"ka"},{"ID":93,"f":"ኩ","b":"ku"},{"ID":94,"f":"ኪ","b":"ki"},{"ID":95,"f":"ካ","b":"kā"},{"ID":96,"f":"ኬ","b":"ke"},{"ID":97,"f":"ክ","b":"kə"},{"ID":98,"f":"ኮ","b":"ko"},{"ID":99,"f":"ወ","b":"wa"},{"ID":100,"f":"ዉ","b":"wu"},{"ID":101,"f":"ዊ","b":"wi"},{"ID":102,"f":"ዋ","b":"wā"},{"ID":103,"f":"ዌ","b":"we"},{"ID":104,"f":"ው","b":"wə"},{"ID":105,"f":"ዎ","b":"wo"},{"ID":106,"f":"ዐ","b":"ʿa"},{"ID":107,"f":"ዑ","b":"ʿu"},{"ID":108,"f":"ዒ","b":"ʿi"},{"ID":109,"f":"ዓ","b":"ʿa"},{"ID":110,"f":"ዔ","b":"ʿe"},{"ID":111,"f":"ዕ","b":"ʿə"},{"ID":112,"f":"ዖ","b":"ʿo"},{"ID":113,"f":"ዘ","b":"za"},{"ID":114,"f":"ዙ","b":"zu"},{"ID":115,"f":"ዚ","b":"zi"},{"ID":116,"f":"ዛ","b":"zā"},{"ID":117,"f":"ዜ","b":"ze"},{"ID":118,"f":"ዝ","b":"zə"},{"ID":119,"f":"ዞ","b":"zo"},{"ID":120,"f":"የ","b":"ya"},{"ID":121,"f":"ዩ","b":"yu"},{"ID":122,"f":"ዪ","b":"yi"},{"ID":123,"f":"ያ","b":"yā"},{"ID":124,"f":"ዬ","b":"ye"},{"ID":125,"f":"ይ","b":"yə"},{"ID":126,"f":"ዮ","b":"yo"},{"ID":127,"f":"ደ","b":"da"},{"ID":128,"f":"ዱ","b":"du"},{"ID":129,"f":"ዲ","b":"di"},{"ID":130,"f":"ዳ","b":"dā"},{"ID":131,"f":"ዴ","b":"de"},{"ID":132,"f":"ድ","b":"də"},{"ID":133,"f":"ዶ","b":"do"},{"ID":134,"f":"ገ","b":"ga"},{"ID":135,"f":"ጉ","b":"gu"},{"ID":136,"f":"ጊ","b":"gi"},{"ID":137,"f":"ጋ","b":"gā"},{"ID":138,"f":"ጌ","b":"ge"},{"ID":139,"f":"ግ","b":"gə"},{"ID":140,"f":"ጎ","b":"go"},{"ID":141,"f":"ጠ","b":"ṭa"},{"ID":142,"f":"ጡ","b":"ṭu"},{"ID":143,"f":"ጢ","b":"ṭi"},{"ID":144,"f":"ጣ","b":"ṭā"},{"ID":145,"f":"ጤ","b":"ṭe"},{"ID":146,"f":"ጥ","b":"ṭə"},{"ID":147,"f":"ጦ","b":"ṭo"},{"ID":148,"f":"ጰ","b":"p̣a"},{"ID":149,"f":"ጱ","b":"p̣u"},{"ID":150,"f":"ጲ","b":"p̣i"},{"ID":151,"f":"ጳ","b":"p̣ā"},{"ID":152,"f":"ጴ","b":"p̣e"},{"ID":153,"f":"ጵ","b":"p̣ə"},{"ID":154,"f":"ጶ","b":"p̣o"},{"ID":155,"f":"ጸ","b":"ṣa"},{"ID":156,"f":"ጹ","b":"ṣu"},{"ID":157,"f":"ጺ","b":"ṣi"},{"ID":158,"f":"ጻ","b":"ṣā"},{"ID":159,"f":"ጼ","b":"ṣe"},{"ID":160,"f":"ጽ","b":"ṣə"},{"ID":161,"f":"ጾ","b":"ṣo"},{"ID":162,"f":"ፀ","b":"ḍa"},{"ID":163,"f":"ፁ","b":"ḍu"},{"ID":164,"f":"ፂ","b":"ḍi"},{"ID":165,"f":"ፃ","b":"ḍā"},{"ID":166,"f":"ፄ","b":"ḍe"},{"ID":167,"f":"ፅ","b":"ḍə"},{"ID":168,"f":"ፆ","b":"ḍo"},{"ID":169,"f":"ፈ","b":"fa"},{"ID":170,"f":"ፉ","b":"fu"},{"ID":171,"f":"ፊ","b":"fi"},{"ID":172,"f":"ፋ","b":"fā"},{"ID":173,"f":"ፌ","b":"fe"},{"ID":174,"f":"ፍ","b":"fə"},{"ID":175,"f":"ፎ","b":"fo"},{"ID":176,"f":"ፐ","b":"pa"},{"ID":177,"f":"ፑ","b":"pu"},{"ID":178,"f":"ፒ","b":"pi"},{"ID":179,"f":"ፓ","b":"pā"},{"ID":180,"f":"ፔ","b":"pe"},{"ID":181,"f":"ፕ","b":"pə"},{"ID":182,"f":"ፖ","b":"po"}],"0-legged":[{"ID":1,"f":"ሀ","b":"ha"},{"ID":22,"f":"መ","b":"ma"},{"ID":29,"f":"ሠ","b":"ša"},{"ID":36,"f":"ረ","b":"ra"},{"ID":99,"f":"ወ","b":"wa"},{"ID":106,"f":"ዐ","b":"ʿa"},{"ID":162,"f":"ፀ","b":"ḍa"},{"ID":169,"f":"ፈ","b":"fa"}],"1-legged":[{"ID":50,"f":"ቀ","b":"qa"},{"ID":64,"f":"ተ","b":"ta"},{"ID":71,"f":"ኀ","b":"ḫa"},{"ID":78,"f":"ነ","b":"na"},{"ID":120,"f":"የ","b":"ya"},{"ID":134,"f":"ገ","b":"ga"},{"ID":176,"f":"ፐ","b":"pa"}],"2-legged":[{"ID":8,"f":"ለ","b":"la"},{"ID":43,"f":"ሰ","b":"sa"},{"ID":57,"f":"በ","b":"ba"},{"ID":85,"f":"አ","b":"ʾa"},{"ID":92,"f":"ከ","b":"ka"},{"ID":113,"f":"ዘ","b":"za"},{"ID":127,"f":"ደ","b":"da"},{"ID":148,"f":"ጰ","b":"p̣a"},{"ID":155,"f":"ጸ","b":"ṣa"}],"3-legged":[{"ID":15,"f":"ሐ","b":"ḥə"},{"ID":141,"f":"ጠ","b":"ṭa"}],"Variants of hoy":[{"ID":1,"f":"ሀ","b":"ha"},{"ID":2,"f":"ሁ","b":"hu"},{"ID":3,"f":"ሂ","b":"hi"},{"ID":4,"f":"ሃ","b":"hā"},{"ID":5,"f":"ሄ","b":"he"},{"ID":6,"f":"ህ","b":"hə"},{"ID":7,"f":"ሆ","b":"ho"}],"Variants of lāwi":[{"ID":8,"f":"ለ","b":"la"},{"ID":9,"f":"ሉ","b":"lu"},{"ID":10,"f":"ሊ","b":"li"},{"ID":11,"f":"ላ","b":"lā"},{"ID":12,"f":"ሌ","b":"le"},{"ID":13,"f":"ል","b":"lə"},{"ID":14,"f":"ሎ","b":"lo"}],"Variants of ḥawt":[{"ID":15,"f":"ሐ","b":"ḥə"},{"ID":16,"f":"ሑ","b":"ḥu"},{"ID":17,"f":"ሒ","b":"ḥi"},{"ID":18,"f":"ሓ","b":"ḥā"},{"ID":19,"f":"ሔ","b":"ḥe"},{"ID":20,"f":"ሕ","b":"ḥə"},{"ID":21,"f":"ሖ","b":"ḥo"}],"Variants of māy":[{"ID":22,"f":"መ","b":"ma"},{"ID":23,"f":"ሙ","b":"mu"},{"ID":24,"f":"ሚ","b":"mi"},{"ID":25,"f":"ማ","b":"mā"},{"ID":26,"f":"ሜ","b":"me"},{"ID":27,"f":"ም","b":"mə"},{"ID":28,"f":"ሞ","b":"mo"}],"Variants of šawt":[{"ID":29,"f":"ሠ","b":"ša"},{"ID":30,"f":"ሡ","b":"šu"},{"ID":31,"f":"ሢ","b":"ši"},{"ID":32,"f":"ሣ","b":"šā"},{"ID":33,"f":"ሤ","b":"še"},{"ID":34,"f":"ሥ","b":"šə"},{"ID":35,"f":"ሦ","b":"šo"}],"Variants of rəʾəs":[{"ID":36,"f":"ረ","b":"ra"},{"ID":37,"f":"ሩ","b":"ru"},{"ID":38,"f":"ሪ","b":"ri"},{"ID":39,"f":"ራ","b":"rā"},{"ID":40,"f":"ሬ","b":"re"},{"ID":41,"f":"ር","b":"rə"},{"ID":42,"f":"ሮ","b":"ro"}],"Variants of sāt":[{"ID":43,"f":"ሰ","b":"sa"},{"ID":44,"f":"ሱ","b":"su"},{"ID":45,"f":"ሲ","b":"si"},{"ID":46,"f":"ሳ","b":"sā"},{"ID":47,"f":"ሴ","b":"se"},{"ID":48,"f":"ስ","b":"sə"},{"ID":49,"f":"ሶ","b":"so"}],"Variants of qāf":[{"ID":50,"f":"ቀ","b":"qa"},{"ID":51,"f":"ቁ","b":"qu"},{"ID":52,"f":"ቂ","b":"qi"},{"ID":53,"f":"ቃ","b":"qā"},{"ID":54,"f":"ቄ","b":"qe"},{"ID":55,"f":"ቅ","b":"qə"},{"ID":56,"f":"ቆ","b":"qo"}],"Variants of bet":[{"ID":57,"f":"በ","b":"ba"},{"ID":58,"f":"ቡ","b":"bu"},{"ID":59,"f":"ቢ","b":"bi"},{"ID":60,"f":"ባ","b":"bā"},{"ID":61,"f":"ቤ","b":"be"},{"ID":62,"f":"ብ","b":"bə"},{"ID":63,"f":"ቦ","b":"bo"}],"Variants of tāw":[{"ID":64,"f":"ተ","b":"ta"},{"ID":65,"f":"ቱ","b":"tu"},{"ID":66,"f":"ቲ","b":"ti"},{"ID":67,"f":"ታ","b":"tā"},{"ID":68,"f":"ቴ","b":"te"},{"ID":69,"f":"ት","b":"tə"},{"ID":70,"f":"ቶ","b":"to"}],"Variants of ḫarm":[{"ID":71,"f":"ኀ","b":"ḫa"},{"ID":72,"f":"ኁ","b":"ḫu"},{"ID":73,"f":"ኂ","b":"ḫi"},{"ID":74,"f":"ኃ","b":"ḫa"},{"ID":75,"f":"ኄ","b":"ḫe"},{"ID":76,"f":"ኅ","b":"ḫə"},{"ID":77,"f":"ኆ","b":"ḫo"}],"Variants of naḥs":[{"ID":78,"f":"ነ","b":"na"},{"ID":79,"f":"ኑ","b":"nu"},{"ID":80,"f":"ኒ","b":"ni"},{"ID":81,"f":"ና","b":"nā"},{"ID":82,"f":"ኔ","b":"ne"},{"ID":83,"f":"ን","b":"nə"},{"ID":84,"f":"ኖ","b":"no"}],"Variants of ʾalf":[{"ID":85,"f":"አ","b":"ʾa"},{"ID":86,"f":"ኡ","b":"ʾu"},{"ID":87,"f":"ኢ","b":"ʾi"},{"ID":88,"f":"ኣ","b":"ʾa"},{"ID":89,"f":"ኤ","b":"ʾe"},{"ID":90,"f":"እ","b":"ʾə"},{"ID":91,"f":"ኦ","b":"ʾo"}],"Variants of kāf":[{"ID":92,"f":"ከ","b":"ka"},{"ID":93,"f":"ኩ","b":"ku"},{"ID":94,"f":"ኪ","b":"ki"},{"ID":95,"f":"ካ","b":"kā"},{"ID":96,"f":"ኬ","b":"ke"},{"ID":97,"f":"ክ","b":"kə"},{"ID":98,"f":"ኮ","b":"ko"}],"Variants of wawe":[{"ID":99,"f":"ወ","b":"wa"},{"ID":100,"f":"ዉ","b":"wu"},{"ID":101,"f":"ዊ","b":"wi"},{"ID":102,"f":"ዋ","b":"wā"},{"ID":103,"f":"ዌ","b":"we"},{"ID":104,"f":"ው","b":"wə"},{"ID":105,"f":"ዎ","b":"wo"}],"Variants of ʿayn":[{"ID":106,"f":"ዐ","b":"ʿa"},{"ID":107,"f":"ዑ","b":"ʿu"},{"ID":108,"f":"ዒ","b":"ʿi"},{"ID":109,"f":"ዓ","b":"ʿa"},{"ID":110,"f":"ዔ","b":"ʿe"},{"ID":111,"f":"ዕ","b":"ʿə"},{"ID":112,"f":"ዖ","b":"ʿo"}],"Variants of zay":[{"ID":113,"f":"ዘ","b":"za"},{"ID":114,"f":"ዙ","b":"zu"},{"ID":115,"f":"ዚ","b":"zi"},{"ID":116,"f":"ዛ","b":"zā"},{"ID":117,"f":"ዜ","b":"ze"},{"ID":118,"f":"ዝ","b":"zə"},{"ID":119,"f":"ዞ","b":"zo"}],"Variants of yaman":[{"ID":120,"f":"የ","b":"ya"},{"ID":121,"f":"ዩ","b":"yu"},{"ID":122,"f":"ዪ","b":"yi"},{"ID":123,"f":"ያ","b":"yā"},{"ID":124,"f":"ዬ","b":"ye"},{"ID":125,"f":"ይ","b":"yə"},{"ID":126,"f":"ዮ","b":"yo"}],"Variants of dənt":[{"ID":127,"f":"ደ","b":"da"},{"ID":128,"f":"ዱ","b":"du"},{"ID":129,"f":"ዲ","b":"di"},{"ID":130,"f":"ዳ","b":"dā"},{"ID":131,"f":"ዴ","b":"de"},{"ID":132,"f":"ድ","b":"də"},{"ID":133,"f":"ዶ","b":"do"}],"Variants of gaml":[{"ID":134,"f":"ገ","b":"ga"},{"ID":135,"f":"ጉ","b":"gu"},{"ID":136,"f":"ጊ","b":"gi"},{"ID":137,"f":"ጋ","b":"gā"},{"ID":138,"f":"ጌ","b":"ge"},{"ID":139,"f":"ግ","b":"gə"},{"ID":140,"f":"ጎ","b":"go"}],"Variants of ṭayt":[{"ID":141,"f":"ጠ","b":"ṭa"},{"ID":142,"f":"ጡ","b":"ṭu"},{"ID":143,"f":"ጢ","b":"ṭi"},{"ID":144,"f":"ጣ","b":"ṭā"},{"ID":145,"f":"ጤ","b":"ṭe"},{"ID":146,"f":"ጥ","b":"ṭə"},{"ID":147,"f":"ጦ","b":"ṭo"}],"Variants of p̣ayt":[{"ID":148,"f":"ጰ","b":"p̣a"},{"ID":149,"f":"ጱ","b":"p̣u"},{"ID":150,"f":"ጲ","b":"p̣i"},{"ID":151,"f":"ጳ","b":"p̣ā"},{"ID":152,"f":"ጴ","b":"p̣e"},{"ID":153,"f":"ጵ","b":"p̣ə"},{"ID":154,"f":"ጶ","b":"p̣o"}],"Variants of ṣaday":[{"ID":155,"f":"ጸ","b":"ṣa"},{"ID":156,"f":"ጹ","b":"ṣu"},{"ID":157,"f":"ጺ","b":"ṣi"},{"ID":158,"f":"ጻ","b":"ṣā"},{"ID":159,"f":"ጼ","b":"ṣe"},{"ID":160,"f":"ጽ","b":"ṣə"},{"ID":161,"f":"ጾ","b":"ṣo"}],"Variants of ḍappa":[{"ID":162,"f":"ፀ","b":"ḍa"},{"ID":163,"f":"ፁ","b":"ḍu"},{"ID":164,"f":"ፂ","b":"ḍi"},{"ID":165,"f":"ፃ","b":"ḍā"},{"ID":166,"f":"ፄ","b":"ḍe"},{"ID":167,"f":"ፅ","b":"ḍə"},{"ID":168,"f":"ፆ","b":"ḍo"}],"Variants of ʾaf":[{"ID":169,"f":"ፈ","b":"fa"},{"ID":170,"f":"ፉ","b":"fu"},{"ID":171,"f":"ፊ","b":"fi"},{"ID":172,"f":"ፋ","b":"fā"},{"ID":173,"f":"ፌ","b":"fe"},{"ID":174,"f":"ፍ","b":"fə"},{"ID":175,"f":"ፎ","b":"fo"}],"Variants of pəs":[{"ID":176,"f":"ፐ","b":"pa"},{"ID":177,"f":"ፑ","b":"pu"},{"ID":178,"f":"ፒ","b":"pi"},{"ID":179,"f":"ፓ","b":"pā"},{"ID":180,"f":"ፔ","b":"pe"},{"ID":181,"f":"ፕ","b":"pə"},{"ID":182,"f":"ፖ","b":"po"}],"Punctuation":[{"ID":183,"f":"፡","b":"word break"},{"ID":184,"f":"።","b":"sent. break"},{"ID":185,"f":"፨","b":"para. break"}],"Numerals":[{"ID":186,"f":"፩","b":"1"},{"ID":187,"f":"፪","b":"2"},{"ID":188,"f":"፫","b":"3"},{"ID":189,"f":"፬","b":"4"},{"ID":190,"f":"፭","b":"5"},{"ID":191,"f":"፮","b":"6"},{"ID":192,"f":"፯","b":"7"},{"ID":193,"f":"፰","b":"8"},{"ID":194,"f":"፱","b":"9"},{"ID":195,"f":"፲","b":"10"},{"ID":196,"f":"፳","b":"20"},{"ID":197,"f":"፴","b":"30"},{"ID":198,"f":"፵","b":"40"},{"ID":199,"f":"፶","b":"50"},{"ID":200,"f":"፷","b":"60"},{"ID":201,"f":"፸","b":"70"},{"ID":202,"f":"፹","b":"80"},{"ID":203,"f":"፺","b":"90"},{"ID":204,"f":"፻","b":"100"},{"ID":205,"f":"፼","b":"10000"}]};
+  var current_set = 'All';
+  </script>
+
+  <script src="/ethiopic/assets/js/flashcards.js"></script>
+  
+ 
+
+</head>
+<body>
+    <div id="flashcards">
+    <div id="mydiv">
+      <div class="top">
+        <div id="flashcards-title">Title</div>
+        <a href="#" class="flashcards-close">&times;</a>
+      </div>
+      <div class="deck">A</div>
+      <div class="tools">
+	<button>hi</button><button data-correct="true">ha</button><button>hu</button>      
+      </div>
+    </div>  
+  </div><section id='header'>
+    <div id="header-tint"></div>
+    <!-- Fixed navbar -->
+    <nav class="navbar" style="display:contents;">
+      <div class="container-fluid">
+      
+      
+        <div class="navbar-header">
+
+          <a class="navbar-brand" href="/ethiopic/" style="font-weight:bold;color:black;text-transform:uppercase;letter-spacing:4px;"><h1 style='margin-top:0px;margin-bottom:0px;'>THE GE'EZ SCRIPT</h1><h5 style='letter-spacing:0px;margin-top:0px;'>The Rules, History, and Aesthetics of the Ethiopian-Eritrean Writing System</h5></a>
+          
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>          
+        </div>
+        
+        
+       
+      </div>
+    </nav>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/ethiopic/index.html">Home</a></li>
+            <li><a href="/ethiopic/letters.html">Letters</a></li>
+            <li><a href="/ethiopic/syllabary.html">Syllabary</a></li>
+            <li><a href="/ethiopic/numerals.html">Numerals</a></li>
+            <li><a href="/ethiopic/learn.html">Learn</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->    
+</section>
+
+
+<main class="container main-content" aria-label="Content">   
+        <style>
+#syllabary thead th { text-align:center;font-size:1.3em;padding-bottom:1em;}
+#syllabary tbody th { text-align:center;font-size:1.3em;}
+#syllabary td { 
+   text-align:center;
+   height:4em;
+   min-width:108px;
+ }
+.newtile { 
+   padding:1em;
+   font-size:1.8em;
+   background:white;
+   border:solid 1px #c8c3ad;
+   display:block;
+   text-decoration:none;
+   margin:2px;
+   min-width:108px;
+ }
+.newtile:hover { background:#EEE; text-decoration:none;color:black; }
+</style>
+
+<div class="row">
+
+  <div class="col-sm-12">
+
+      <h2 style="margin:2em 0 1.6em;">The Syllabary</h2>
+      
+      
+         <div class="scroll-window">  
+    
+	
+	<table id="syllabary" style="table-layout:fixed;">
+	  <thead>
+	  <tr>
+	    <th></th>
+	    <th>a</th>
+	    <th>u</th>
+	    <th>i</th>
+	    <th>ā</th>
+	    <th>e</th>
+	    <th>ə </th>
+	    <th>o</th>
+	    <th><sup>w</sup>ā</th>
+	    <th><sup>y</sup>a</th>
+	  </tr>
+	  </thead>
+	  <tbody>
+	  <tr>
+	    <th>h</th>
+	
+	   
+	   
+	   <td><a class="newtile group" title="ha" alt="ha" href="syllables/1.html">ሀ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="hu" alt="hu" href="syllables/2.html">ሁ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="hi" alt="hi" href="syllables/3.html">ሂ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="hā" alt="hā" href="syllables/4.html">ሃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="he" alt="he" href="syllables/5.html">ሄ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="hə " alt="hə " href="syllables/6.html">ህ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ho" alt="ho" href="syllables/7.html">ሆ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="hwā" alt="hwā" href="syllables/8.html">ሇ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>h</th>
+	   
+	   
+	   <td><a class="newtile group" title="la" alt="la" href="syllables/10.html">ለ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="lu" alt="lu" href="syllables/11.html">ሉ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="li" alt="li" href="syllables/12.html">ሊ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="lā" alt="lā" href="syllables/13.html">ላ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="le" alt="le" href="syllables/14.html">ሌ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="lə " alt="lə " href="syllables/15.html">ል</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="lo" alt="lo" href="syllables/16.html">ሎ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="lwā" alt="lwā" href="syllables/17.html">ሏ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>l</th>
+	   
+	   
+	   <td><a class="newtile group" title="ḥa" alt="ḥa" href="syllables/19.html">ሐ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥu" alt="ḥu" href="syllables/20.html">ሑ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥi" alt="ḥi" href="syllables/21.html">ሒ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥā" alt="ḥā" href="syllables/22.html">ሓ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥe" alt="ḥe" href="syllables/23.html">ሔ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥə " alt="ḥə " href="syllables/24.html">ሕ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥo" alt="ḥo" href="syllables/25.html">ሖ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḥwā" alt="ḥwā" href="syllables/26.html">ሗ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ḥ</th>
+	   
+	   
+	   <td><a class="newtile group" title="ma" alt="ma" href="syllables/28.html">መ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mu" alt="mu" href="syllables/29.html">ሙ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mi" alt="mi" href="syllables/30.html">ሚ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mā" alt="mā" href="syllables/31.html">ማ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="me" alt="me" href="syllables/32.html">ሜ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mə " alt="mə " href="syllables/33.html">ም</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mo" alt="mo" href="syllables/34.html">ሞ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mwā" alt="mwā" href="syllables/35.html">ሟ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="mya" alt="mya" href="syllables/36.html">ፙ</a></td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>m</th>
+	   
+	   
+	   <td><a class="newtile group" title="śa" alt="śa" href="syllables/37.html">ሠ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śu" alt="śu" href="syllables/38.html">ሡ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śi" alt="śi" href="syllables/39.html">ሢ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śā" alt="śā" href="syllables/40.html">ሣ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śe" alt="śe" href="syllables/41.html">ሤ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śə " alt="śə " href="syllables/42.html">ሥ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śo" alt="śo" href="syllables/43.html">ሦ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="śwā" alt="śwā" href="syllables/44.html">ሧ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ś</th>
+	   
+	   
+	   <td><a class="newtile group" title="ra" alt="ra" href="syllables/46.html">ረ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ru" alt="ru" href="syllables/47.html">ሩ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ri" alt="ri" href="syllables/48.html">ሪ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="rā" alt="rā" href="syllables/49.html">ራ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="re" alt="re" href="syllables/50.html">ሬ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="rə " alt="rə " href="syllables/51.html">ር</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ro" alt="ro" href="syllables/52.html">ሮ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="rwā" alt="rwā" href="syllables/53.html">ሯ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="rya" alt="rya" href="syllables/54.html">ፘ</a></td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>r</th>
+	   
+	   
+	   <td><a class="newtile group" title="sa" alt="sa" href="syllables/55.html">ሰ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="su" alt="su" href="syllables/56.html">ሱ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="si" alt="si" href="syllables/57.html">ሲ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="sā" alt="sā" href="syllables/58.html">ሳ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="se" alt="se" href="syllables/59.html">ሴ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="sə " alt="sə " href="syllables/60.html">ስ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="so" alt="so" href="syllables/61.html">ሶ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="swā" alt="swā" href="syllables/62.html">ሷ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>s</th>
+	   
+	   
+	   <td><a class="newtile group" title="ša" alt="ša" href="syllables/64.html">ሸ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="šu" alt="šu" href="syllables/65.html">ሹ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ši" alt="ši" href="syllables/66.html">ሺ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="šā" alt="šā" href="syllables/67.html">ሻ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="še" alt="še" href="syllables/68.html">ሼ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="šə " alt="šə " href="syllables/69.html">ሽ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="šo" alt="šo" href="syllables/70.html">ሾ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="šwā" alt="šwā" href="syllables/71.html">ሿ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>š</th>
+	   
+	   
+	   <td><a class="newtile group" title="qa" alt="qa" href="syllables/73.html">ቀ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qu" alt="qu" href="syllables/74.html">ቁ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qi" alt="qi" href="syllables/75.html">ቂ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qā" alt="qā" href="syllables/76.html">ቃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qe" alt="qe" href="syllables/77.html">ቄ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qə " alt="qə " href="syllables/78.html">ቅ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qo" alt="qo" href="syllables/79.html">ቆ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qwā" alt="qwā" href="syllables/80.html">ቇ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>q</th>
+	   
+	   
+	   <td><a class="newtile group" title="qwa" alt="qwa" href="syllables/82.html">ቈ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qwi" alt="qwi" href="syllables/84.html">ቊ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qwā" alt="qwā" href="syllables/85.html">ቋ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qwe" alt="qwe" href="syllables/86.html">ቌ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="qwə " alt="qwə " href="syllables/87.html">ቍ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>qw</th>
+	   
+	   
+	   <td><a class="newtile group" title="x̣a" alt="x̣a" href="syllables/91.html">ቐ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣u" alt="x̣u" href="syllables/92.html">ቑ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣i" alt="x̣i" href="syllables/93.html">ቒ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣ā" alt="x̣ā" href="syllables/94.html">ቓ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣e" alt="x̣e" href="syllables/95.html">ቔ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣ə " alt="x̣ə " href="syllables/96.html">ቅ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣o" alt="x̣o" href="syllables/97.html">ቖ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>x̣</th>
+	   
+	   
+	   <td><a class="newtile group" title="x̣wa" alt="x̣wa" href="syllables/100.html">ቘ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣wi" alt="x̣wi" href="syllables/102.html">ቝ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣wā" alt="x̣wā" href="syllables/103.html">ቛ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣we" alt="x̣we" href="syllables/104.html">ቜ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="x̣wə " alt="x̣wə " href="syllables/105.html">ቚ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>x̣w</th>
+	   
+	   
+	   <td><a class="newtile group" title="ba" alt="ba" href="syllables/109.html">በ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="bu" alt="bu" href="syllables/110.html">ቡ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="bi" alt="bi" href="syllables/111.html">ቢ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="bā" alt="bā" href="syllables/112.html">ባ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="be" alt="be" href="syllables/113.html">ቤ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="bə " alt="bə " href="syllables/114.html">ብ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="bo" alt="bo" href="syllables/115.html">ቦ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="bwā" alt="bwā" href="syllables/116.html">ቧ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>b</th>
+	   
+	   
+	   <td><a class="newtile group" title="va" alt="va" href="syllables/118.html">ቨ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="vu" alt="vu" href="syllables/119.html">ቩ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="vi" alt="vi" href="syllables/120.html">ቪ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="vā" alt="vā" href="syllables/121.html">ቫ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ve" alt="ve" href="syllables/122.html">ቬ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="və " alt="və " href="syllables/123.html">ቭ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="vo" alt="vo" href="syllables/124.html">ቮ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="vwā" alt="vwā" href="syllables/125.html">ቯ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>v</th>
+	   
+	   
+	   <td><a class="newtile group" title="ta" alt="ta" href="syllables/127.html">ተ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="tu" alt="tu" href="syllables/128.html">ቱ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ti" alt="ti" href="syllables/129.html">ቲ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="tā" alt="tā" href="syllables/130.html">ታ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="te" alt="te" href="syllables/131.html">ቴ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="tə " alt="tə " href="syllables/132.html">ት</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="to" alt="to" href="syllables/133.html">ቶ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="twā" alt="twā" href="syllables/134.html">ቷ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>t</th>
+	   
+	   
+	   <td><a class="newtile group" title="ča" alt="ča" href="syllables/136.html">ቸ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ču" alt="ču" href="syllables/137.html">ቹ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="či" alt="či" href="syllables/138.html">ቺ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="čā" alt="čā" href="syllables/139.html">ቻ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="če" alt="če" href="syllables/140.html">ቼ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="čə " alt="čə " href="syllables/141.html">ች</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="čo" alt="čo" href="syllables/142.html">ቾ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="čwā" alt="čwā" href="syllables/143.html">ቿ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>č</th>
+	   
+	   
+	   <td><a class="newtile group" title="xa" alt="xa" href="syllables/145.html">ኀ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xu" alt="xu" href="syllables/146.html">ኁ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xi" alt="xi" href="syllables/147.html">ኂ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xā" alt="xā" href="syllables/148.html">ኃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xe" alt="xe" href="syllables/149.html">ኄ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xə " alt="xə " href="syllables/150.html">ኅ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xo" alt="xo" href="syllables/151.html">ኆ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xwā" alt="xwā" href="syllables/152.html">ኇ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>x</th>
+	   
+	   
+	   <td><a class="newtile group" title="ḫa" alt="ḫa" href="syllables/154.html">ኈ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḫi" alt="ḫi" href="syllables/156.html">ኊ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḫā" alt="ḫā" href="syllables/157.html">ኋ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḫe" alt="ḫe" href="syllables/158.html">ኌ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḫə " alt="ḫə " href="syllables/159.html">ኍ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ḫ</th>
+	   
+	   
+	   <td><a class="newtile group" title="na" alt="na" href="syllables/163.html">ነ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="nu" alt="nu" href="syllables/164.html">ኑ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ni" alt="ni" href="syllables/165.html">ኒ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="nā" alt="nā" href="syllables/166.html">ና</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ne" alt="ne" href="syllables/167.html">ኔ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="nə " alt="nə " href="syllables/168.html">ን</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="no" alt="no" href="syllables/169.html">ኖ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="nwā" alt="nwā" href="syllables/170.html">ኗ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>n</th>
+	   
+	   
+	   <td><a class="newtile group" title="ña" alt="ña" href="syllables/172.html">ኘ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ñu" alt="ñu" href="syllables/173.html">ኙ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ñi" alt="ñi" href="syllables/174.html">ኚ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ñā" alt="ñā" href="syllables/175.html">ኛ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ñe" alt="ñe" href="syllables/176.html">ኜ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ñə " alt="ñə " href="syllables/177.html">ኝ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ño" alt="ño" href="syllables/178.html">ኞ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ñwā" alt="ñwā" href="syllables/179.html">ኟ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ñ</th>
+	   
+	   
+	   <td><a class="newtile group" title="ʾa" alt="ʾa" href="syllables/181.html">አ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾu" alt="ʾu" href="syllables/182.html">ኡ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾi" alt="ʾi" href="syllables/183.html">ኢ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾā" alt="ʾā" href="syllables/184.html">ኣ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾe" alt="ʾe" href="syllables/185.html">ኤ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾə " alt="ʾə " href="syllables/186.html">እ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾo" alt="ʾo" href="syllables/187.html">ኦ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʾwā" alt="ʾwā" href="syllables/188.html">ኧ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ʾ</th>
+	   
+	   
+	   <td><a class="newtile group" title="ka" alt="ka" href="syllables/.html">ከ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ku" alt="ku" href="syllables/.html">ኩ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ki" alt="ki" href="syllables/.html">ኪ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kā" alt="kā" href="syllables/.html">ካ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ke" alt="ke" href="syllables/.html">ኬ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kə " alt="kə " href="syllables/.html">ክ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ko" alt="ko" href="syllables/.html">ኮ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kwā" alt="kwā" href="syllables/.html">ኳ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>k</th>
+	   
+	   
+	   <td><a class="newtile group" title="kwa" alt="kwa" href="syllables/.html">ኰ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kwi" alt="kwi" href="syllables/.html">ኲ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kwā" alt="kwā" href="syllables/.html">ኳ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kwe" alt="kwe" href="syllables/.html">ኴ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="kwə " alt="kwə " href="syllables/.html">ኵ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>kw</th>
+	   
+	   
+	   <td><a class="newtile group" title="xa" alt="xa" href="syllables/.html">ኸ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xu" alt="xu" href="syllables/.html">ኹ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xi" alt="xi" href="syllables/.html">ኺ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xā" alt="xā" href="syllables/.html">ኻ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xe" alt="xe" href="syllables/.html">ኼ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xə " alt="xə " href="syllables/.html">ኽ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xo" alt="xo" href="syllables/.html">ኾ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xwā" alt="xwā" href="syllables/.html">ዃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>x</th>
+	   
+	   
+	   <td><a class="newtile group" title="xwa" alt="xwa" href="syllables/.html">ዀ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xwi" alt="xwi" href="syllables/.html">ዂ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xwā" alt="xwā" href="syllables/.html">ዃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xwe" alt="xwe" href="syllables/.html">ዄ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="xwə " alt="xwə " href="syllables/.html">ዅ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>xw</th>
+	   
+	   
+	   <td><a class="newtile group" title="wa" alt="wa" href="syllables/.html">ወ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="wu" alt="wu" href="syllables/.html">ዉ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="wi" alt="wi" href="syllables/.html">ዊ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="wā" alt="wā" href="syllables/.html">ዋ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="we" alt="we" href="syllables/.html">ዌ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="wə " alt="wə " href="syllables/.html">ው</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="wo" alt="wo" href="syllables/.html">ዎ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>w</th>
+	   
+	   
+	   <td><a class="newtile group" title="ʿa" alt="ʿa" href="syllables/.html">ዐ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʿu" alt="ʿu" href="syllables/.html">ዑ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʿi" alt="ʿi" href="syllables/.html">ዒ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʿā" alt="ʿā" href="syllables/.html">ዓ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʿe" alt="ʿe" href="syllables/.html">ዔ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʿə " alt="ʿə " href="syllables/.html">ዕ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ʿo" alt="ʿo" href="syllables/.html">ዖ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ʿ</th>
+	   
+	   
+	   <td><a class="newtile group" title="za" alt="za" href="syllables/.html">ዘ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="zu" alt="zu" href="syllables/.html">ዙ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="zi" alt="zi" href="syllables/.html">ዚ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="zā" alt="zā" href="syllables/.html">ዛ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ze" alt="ze" href="syllables/.html">ዜ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="zə " alt="zə " href="syllables/.html">ዝ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="zo" alt="zo" href="syllables/.html">ዞ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="zwā" alt="zwā" href="syllables/.html">ዟ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>z</th>
+	   
+	   
+	   <td><a class="newtile group" title="ža" alt="ža" href="syllables/.html">ዠ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="žu" alt="žu" href="syllables/.html">ዡ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ži" alt="ži" href="syllables/.html">ዢ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="žā" alt="žā" href="syllables/.html">ዣ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="že" alt="že" href="syllables/.html">ዤ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="žə " alt="žə " href="syllables/.html">ዥ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="žo" alt="žo" href="syllables/.html">ዦ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="žwā" alt="žwā" href="syllables/.html">ዧ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ž</th>
+	   
+	   
+	   <td><a class="newtile group" title="ya" alt="ya" href="syllables/.html">የ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="yu" alt="yu" href="syllables/.html">ዩ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="yi" alt="yi" href="syllables/.html">ዪ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="yā" alt="yā" href="syllables/.html">ያ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ye" alt="ye" href="syllables/.html">ዬ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="yə " alt="yə " href="syllables/.html">ይ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="yo" alt="yo" href="syllables/.html">ዮ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>y</th>
+	   
+	   
+	   <td><a class="newtile group" title="da" alt="da" href="syllables/.html">ደ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="du" alt="du" href="syllables/.html">ዱ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="di" alt="di" href="syllables/.html">ዲ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="dā" alt="dā" href="syllables/.html">ዳ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="de" alt="de" href="syllables/.html">ዴ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="də " alt="də " href="syllables/.html">ድ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="do" alt="do" href="syllables/.html">ዶ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>d</th>
+	   
+	   
+	   <td><a class="newtile group" title="ja" alt="ja" href="syllables/.html">ጀ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ju" alt="ju" href="syllables/.html">ጁ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ji" alt="ji" href="syllables/.html">ጂ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="jā" alt="jā" href="syllables/.html">ጃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="je" alt="je" href="syllables/.html">ጄ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="jə " alt="jə " href="syllables/.html">ጅ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="jo" alt="jo" href="syllables/.html">ጆ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="jwā" alt="jwā" href="syllables/.html">ጇ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>j</th>
+	   
+	   
+	   <td><a class="newtile group" title="ḍa" alt="ḍa" href="syllables/.html">ዸ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍu" alt="ḍu" href="syllables/.html">ዹ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍi" alt="ḍi" href="syllables/.html">ዺ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍā" alt="ḍā" href="syllables/.html">ዻ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍe" alt="ḍe" href="syllables/.html">ዼ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍə " alt="ḍə " href="syllables/.html">ዽ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍo" alt="ḍo" href="syllables/.html">ዾ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ḍwā" alt="ḍwā" href="syllables/.html">ዿ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ḍ</th>
+	   
+	   
+	   <td><a class="newtile group" title="ga" alt="ga" href="syllables/.html">ገ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gu" alt="gu" href="syllables/.html">ጉ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gi" alt="gi" href="syllables/.html">ጊ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gā" alt="gā" href="syllables/.html">ጋ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ge" alt="ge" href="syllables/.html">ጌ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gə " alt="gə " href="syllables/.html">ግ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="go" alt="go" href="syllables/.html">ጎ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gwā" alt="gwā" href="syllables/.html">ጏ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>g</th>
+	   
+	   
+	   <td><a class="newtile group" title="gwa" alt="gwa" href="syllables/.html">ጐ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gwi" alt="gwi" href="syllables/.html">ጕ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gwā" alt="gwā" href="syllables/.html">ጓ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gwe" alt="gwe" href="syllables/.html">ጔ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="gwə " alt="gwə " href="syllables/.html">ጒ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>gw</th>
+	   
+	   
+	   <td><a class="newtile group" title="ŋa" alt="ŋa" href="syllables/.html">ጘ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋu" alt="ŋu" href="syllables/.html">ጙ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋi" alt="ŋi" href="syllables/.html">ጚ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋā" alt="ŋā" href="syllables/.html">ጛ </a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋe" alt="ŋe" href="syllables/.html">ጜ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋə " alt="ŋə " href="syllables/.html">ጝ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋo" alt="ŋo" href="syllables/.html">ጞ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ŋwā" alt="ŋwā" href="syllables/.html">ጟ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ŋ</th>
+	   
+	   
+	   <td><a class="newtile group" title="ṭa" alt="ṭa" href="syllables/.html">ጠ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭu" alt="ṭu" href="syllables/.html">ጡ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭi" alt="ṭi" href="syllables/.html">ጢ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭā" alt="ṭā" href="syllables/.html">ጣ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭe" alt="ṭe" href="syllables/.html">ጤ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭə " alt="ṭə " href="syllables/.html">ጥ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭo" alt="ṭo" href="syllables/.html">ጦ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṭwā" alt="ṭwā" href="syllables/.html">ጧ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ṭ</th>
+	   
+	   
+	   <td><a class="newtile group" title="č̣a" alt="č̣a" href="syllables/.html">ጨ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣u" alt="č̣u" href="syllables/.html">ጩ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣i" alt="č̣i" href="syllables/.html">ጪ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣ā" alt="č̣ā" href="syllables/.html">ጫ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣e" alt="č̣e" href="syllables/.html">ጬ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣ə " alt="č̣ə " href="syllables/.html">ጭ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣o" alt="č̣o" href="syllables/.html">ጮ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="č̣wā" alt="č̣wā" href="syllables/.html">ጯ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>č̣</th>
+	   
+	   
+	   <td><a class="newtile group" title="p̣a" alt="p̣a" href="syllables/.html">ጰ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣u" alt="p̣u" href="syllables/.html">ጱ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣i" alt="p̣i" href="syllables/.html">ጲ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣ā" alt="p̣ā" href="syllables/.html">ጳ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣e" alt="p̣e" href="syllables/.html">ጴ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣ə " alt="p̣ə " href="syllables/.html">ጵ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣o" alt="p̣o" href="syllables/.html">ጶ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="p̣wā" alt="p̣wā" href="syllables/.html">ጷ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>p̣</th>
+	   
+	   
+	   <td><a class="newtile group" title="ẓa" alt="ẓa" href="syllables/.html">ጸ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓu" alt="ẓu" href="syllables/.html">ጹ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓi" alt="ẓi" href="syllables/.html">ጺ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓā" alt="ẓā" href="syllables/.html">ጻ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓe" alt="ẓe" href="syllables/.html">ጼ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓə " alt="ẓə " href="syllables/.html">ጽ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓo" alt="ẓo" href="syllables/.html">ጾ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ẓwā" alt="ẓwā" href="syllables/.html">ጿ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ẓ</th>
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́a" alt="ṣ́a" href="syllables/.html">ፀ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́u" alt="ṣ́u" href="syllables/.html">ፁ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́i" alt="ṣ́i" href="syllables/.html">ፂ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́ā" alt="ṣ́ā" href="syllables/.html">ፃ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́e" alt="ṣ́e" href="syllables/.html">ፄ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́ə " alt="ṣ́ə " href="syllables/.html">ፅ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́o" alt="ṣ́o" href="syllables/.html">ፆ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="ṣ́wā" alt="ṣ́wā" href="syllables/.html">ፇ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>ṣ́</th>
+	   
+	   
+	   <td><a class="newtile group" title="fa" alt="fa" href="syllables/.html">ፋ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fu" alt="fu" href="syllables/.html">ፉ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fi" alt="fi" href="syllables/.html">ፊ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fā" alt="fā" href="syllables/.html">ፋ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fe" alt="fe" href="syllables/.html">ፌ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fə " alt="fə " href="syllables/.html">ፍ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fo" alt="fo" href="syllables/.html">ፎ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fwā" alt="fwā" href="syllables/.html">ፏ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="fya" alt="fya" href="syllables/.html">ፚ</a></td>
+	   
+	    
+	    
+	
+	   
+	     </tr><tr><th>f</th>
+	   
+	   
+	   <td><a class="newtile group" title="pa" alt="pa" href="syllables/.html">ፐ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="pu" alt="pu" href="syllables/.html">ፑ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="pi" alt="pi" href="syllables/.html">ፒ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="pā" alt="pā" href="syllables/.html">ፓ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="pe" alt="pe" href="syllables/.html">ፔ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="pə " alt="pə " href="syllables/.html">ፕ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="po" alt="po" href="syllables/.html">ፖ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td><a class="newtile group" title="pwā" alt="pwā" href="syllables/.html">ፗ</a></td>
+	   
+	    
+	    
+	
+	   
+	   
+	   <td>&nbsp;</td>
+	   
+	    
+	    
+	
+	  </tr>
+	 </tbody>
+	</table>
+	
+	</div> <!-- /.scroll-window -->
+
+  </div> <!-- /.col -->
+</div>
+
+<script>
+
+
+jQuery(document).ready(function(){
+  
+  
+	
+  jQuery(".flashcards-open").click(function(e){
+    var rel = jQuery(this).attr('rel');
+    console.log(rel);
+    current_set = rel;
+    showNext();
+    jQuery('#flashcards').show();
+    e.preventDefault();
+  }); 
+  
+  jQuery(".flashcards-close").click(function(e){
+    jQuery('#flashcards').hide();
+    e.preventDefault();
+  });	
+  	showNext();
+
+});
+</script>
+
+
+
+    </main>
+<section id='footersection'>
+ 
+  <div class="container-fluid" id='footer'>
+    <div class="row">
+      <div class="col-sm-6" style='valign:top;font-size: 0.8em;'>
+        &copy; 2025 Trustees of <a href="https://www.princeton.edu">Princeton University</a> and Hamza Zafer<br />
+      </div>
+
+      <div class="col-sm-6" style="text-align:right;valign:top;">
+	<a href="https://www.princeton.edu"><img src="/ethiopic/assets/images/Princeton-logo-transparent.png" height="60"/></a><br />
+      </div>
+    </div>
+
+</section>
+</body>
+
+</html>

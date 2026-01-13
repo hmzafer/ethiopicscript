@@ -1,0 +1,48 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: secondary
+banner: TheHistory-wide.jpg
+---
+
+<div class='row'>
+
+  <div class='col-sm-12'>
+
+      <h2 style="margin:2em 0 1.6em;">A Brief History of the Ge’ez Script</h2>
+      
+ 
+
+<p>The Ge’ez writing system emerged during Late Antiquity (circa 3-4th century) in the highlands of modern-day Eritrea and Ethiopia. This African script is unique in being the only alphasyllabary among all Semitic languages. Each letterform or ፊደል (fidal) represents a syllable i.e., the combination of a consonant and vowel. It shares this characteristic with the contemporaneous writing systems of the Indian Subcontinent, such as Brahmi (Northern India) and Kharosthi (Pakistan and Afghanistan). There is evidence of contact between all three scripts in the Red Sea region, especially on the island of Soqotra.</p>
+
+<p>Precursors of the Ge’ez script appear in pre-Aksumite graffiti in the Horn of Africa and monumental inscriptions in Southern Arabia (Yemen). Certain ancient inscriptional forms remain more or less unchanged, such as በ from 𐩨, ነ from 𐩬, and ቀ from 𐩤. Others retain the overall shape but have changed angles or directions, such as ሐ from 𐩢, ሠ from 𐩦, and ተ from 𐩩. Yet others have dropped one stroke from their epigraphic forms, such as ሀ from 𐩠, ዘ from 𐩹, and ጠ from 𐩷. Lastly, there are letter forms that are recognizeably connected, but have undergone more radical transformations, such as ለ from 𐩡, ኀ from 𐩭, and ፈ from 𐩰. The last letters to be added were ፐ and ጰ, which are unattested in early inscriptions and came to be used exclusively for words of Greek origin.</p>
+
+<p>The first fully formed alphasyllabary appears in the Ezana Inscriptions of the mid-4th century, but there is fragmentary evidence of earlier origins. Also, during this earlier period, the once multi-directional “boustrophedon” script adopted a left-to-right direction, maybe through interactions with Greek. Both features of the script, its indication of vowels and rightward direction, appeared during the pre-Christian era but became standardized during the time of Axum’s Christianization.</p>
+
+<p>The traditional names of the letters, e.g., ሆይ (hoy), ላዊ (lāwi), ሐውት (ḥawt) etc, first appear systematically in the 16th century writings of Tasfa Ṣəyon. Nowadays, the letter forms are mostly identified by their pronunciation e.g. ሀ (ha), ለ (la), ሐ (ḥa) etc. New letters representing Amharic sounds, e.g. ጀ (ja), ቸ (ča) and ሸ (ša) etc, were developed during the 14th-15th centuries by the scribes of the Solomonic court. In ensuing centuries, the Ge’ez script was adopted and adapted to write numerous Semitic, Cushitic, and Nilotic languages in the Horn of Africa, including Amharic, Tigrinya, Tigre, Harari, Selti, Chaha, Qabeena, Walayyta, and Irob, currently spoken by over 70 million people. Other languages such as Oromiffa, Sidaama, and Kambaata, now written in Latin-based alphabets, also once used the Ge’ez script. Based on the scribal tradition, the typeface for Ge’ez was developed in the 17th century, and modern digital fonts abound in Ethiopia, Eritrea, and the East African diasporas.</p>
+
+<p>--</p>
+<p>Adapted from Sergeui A. Frantsouzoff, “Script, Ethiopic”, Encyclopedia Aethiopica (Verlag, 2010), vol. 4, pp. 580-585.</p>
+
+  <h2>Manuscripts consulted for this project</h2>
+  
+  <ul>
+    <li><strong>Vat.et.25</strong>, The Vatican Library.<br /><a href="https://digi.vatlib.it/view/MSS_Vat.et.25" target="_blank">https://digi.vatlib.it/view/MSS_Vat.et.25</a></li>
+    <li><strong>Princeton Ethiopic Manuscript No. 65: Miracles of Mary</strong>, Princeton Universty Library.<br /><a href="https://dpul.princeton.edu/msstreasures/catalog/12579w78f" target="_blank">https://dpul.princeton.edu/msstreasures/catalog/12579w78f</a></li>
+    <li><strong>Collection of Hymns</strong>, Princeton Universty Library.<br /><a href="https://dpul.princeton.edu/catalog/s4655m42v" target="_blank">https://dpul.princeton.edu/catalog/s4655m42v</a></li>
+    <li><strong>Homilies of the Archangel Michael and Associated Texts</strong>, Princeton Universty Library.<br /><a href="https://dpul.princeton.edu/catalog/jm214s404" target="_blank">https://dpul.princeton.edu/catalog/jm214s404</a></li>
+    <li><strong>AARB 00202</strong>, Hill Museum & Manuscript Library (HMML).<br /><a href="https://www.vhmml.org/readingRoom/view/534303" target="_blank">https://www.vhmml.org/readingRoom/view/534303</a></li>
+    <li><strong>Stamp.Ross.5349</strong>, The Vatican Library.<br /><a href="https://digi.vatlib.it/view/STP_Stamp.Ross.5349" target="_blank">https://digi.vatlib.it/view/STP_Stamp.Ross.5349</a></li>
+    <li><strong>PJ9087.W455 1638</strong>, Hill Museum & Manuscript Library (HMML).<br /><a href="https://www.vhmml.org/readingRoom/view/816727" target="_blank">https://www.vhmml.org/readingRoom/view/816727</a></li>
+    <li><strong>Ms. 63 Dawit Ṣalota Nabiyāt, Weddasé Māryām, Anqaṣa Berhān, Malek’ā Gāber᾽él</strong>, University of California, Los Angeles.<br /><a href="https://digital.library.ucla.edu/catalog/ark:/21198/zz0009qnkf" target="_blank">https://digital.library.ucla.edu/catalog/ark:/21198/zz0009qnkf</a></li>
+
+    <li><strong>EMML 6977</strong>, Hill Museum & Manuscript Library (HMML).<br /><a href="https://www.vhmml.org/readingRoom/view/200602" target="_blank">https://www.vhmml.org/readingRoom/view/200602</a></li>
+    <li><strong>EMML 1832</strong>, Hill Museum & Manuscript Library (HMML).<br /><a href="https://www.vhmml.org/readingRoom/view/203663" target="_blank">https://www.vhmml.org/readingRoom/view/203663</a></li>
+  </ul>
+
+
+  </div>
+
+</div>
+
