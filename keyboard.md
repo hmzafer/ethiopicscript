@@ -13,7 +13,7 @@ banner: TheHistory-wide.jpg
 
   <div class='col-sm-12'>
 
-     <ethiopic-keyboard></ethiopic-keyboard>
+     <ethiopic-keyboard height="700"></ethiopic-keyboard>
 
   </div>
 

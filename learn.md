@@ -6,6 +6,21 @@ layout: secondary
 banner: TheHistory-wide.jpg
 ---
 
+<style>
+.block {
+  background: #e6e1cb;
+  padding: 1em;
+  width:32%;
+  margin:0 1%;
+  border-radius: 20px 20px 20px 0px; 
+  color: white;
+  background-position: center;
+  margin-bottom:1em;
+  text-align:left;
+}
+.block:hover { color:#EEE;text-decoration:none; }
+</style>
+
 <div class='row'>
 
   <div class='col-sm-12'>
@@ -13,46 +28,30 @@ banner: TheHistory-wide.jpg
       <h2 style="margin:2em 0 1.6em;">Learn</h2>
   </div>
 </div>
-<div class='row'>
 
-  <div class='col-sm-12'>
-      <h3>Quizzes</h3>
-  </div>
-  
-</div>
-<div class='row'>
+<div class='row' style="display:flex;text-align:center;">
 
-  <div class='col-sm-4' style='text-align:center;'>
-       <a href="quiz.html" class="btn active">Character Quiz</a><br />
-  </div>
-  
-  <div class='col-sm-4' style='text-align:center;'>
-       <a href="vocabularyquiz.html" class="btn active">Vocabulary Quiz</a><br />
-  </div>
-  
-  <div class='col-sm-4' style='text-align:center;'>
-       <a href="transcriptionquiz.html" class="btn active">Transcription Quiz</a><br />
-  </div>
-  
-</div>
-<div class='row' style='margin-top:2em;'>
-
-  <div class='col-sm-12'>
+      <a href="quiz.html" class='block' style='background:#B5B19E;'>
+         <h2>Character Quiz</h2>
+      </a>
       
-      <h3>Keyboard</h3>
+      <a href="vocabularyquiz.html" class='block' style='background:#B5B19E;'>
+         <h2>Vocabulary Quiz</h2>
+      </a>
       
- <div class='row'>
+      <a href="transcriptionquiz.html" class='block' style='background:#B5B19E;'>
+         <h2>Transcription Quiz</h2>
+      </a>            
 
-  <div class='col-sm-12'>
 
-     <ethiopic-keyboard></ethiopic-keyboard>
-
-  </div>
 
 </div>
-<script src="assets/js/EthiopicKeyboard.js?v=0.0.4"></script>
 
-  </div>
+<div class='row' style="height:200px;">
+
+      
+
+
 
 </div>
 

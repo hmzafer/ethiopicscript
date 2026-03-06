@@ -1,6 +1,8 @@
     class EthiopicKeyboard extends HTMLElement {
         constructor() {
             super();
+            if(this.getAttribute('height')) { var height = this.getAttribute('height'); }
+            else { var height = "300"; }
             this.attachShadow({
                 mode: 'open'
             });
@@ -8,45 +10,24 @@
  #keyboard { font-size:2em; }
  th, td { text-align:center; }
  #keyboard-container { position:relative; }
- #copybutton { position:absolute;bottom:4px;right:-8px;border-radius:4px; }
- #keybutton { position:absolute;bottom:4px;left:0;border-radius:4px; }
+ #toolbar { position:absolute;bottom:-6px;left:0px;display:flex;}
+ #copybutton { border-radius:4px;margin:1px }
+ #keybutton { border-radius:4px;margin:1px; }
  #vowelbar { height: 340px;overflow-y:auto;display:none; }
  #key-container { display:none; }
  #key-container.shown,#vowelbar.shown { display:block; }
  button {color: #fff;background-color: #286090;border-color: #204d74;padding:0.2em 0.4em;}
 </style>`;
-            this.shadowRoot.innerHTML += `<div id="keyboard-container">
-    <textarea id="keyboard" style="width:100%;height:200px;"></textarea>
+            this.shadowRoot.innerHTML += `<div id="keyboard-container" style="height:${height}px">
+    <textarea id="keyboard" style="width:100%;height:100%;"></textarea>
+    <div id="toolbar">
     <button id="keybutton" class="btn-primary">Key</button>
     <button id="copybutton" class="btn-primary">Copy</button>
+    </div>
    </div>`;
             this.shadowRoot.innerHTML += `<div id="vowelbar" class='shown'>
  
-  <table style='margin:1em auto;width:80%'>
-  <tr>
-    <th>ma</th>
-    <th>mu</th>
-    <th>mi</th>
-    <th>maa</th>
-    <th>me</th>
-    <th>m</th>
-    <th>mo</th>
-    <th>mua</th>
-    <th>mya</th>
-      </tr>
-      <tr>
-    <td>መ</td>
-    <td>ሙ</td>
-    <td>ሚ</td>
-    <td>ማ</td>
-    <td>ሜ</td>
-    <td>ም</td>
-    <td>ሞ</td>
-    <td>ሟ</td>
-    <td>ፙ</td>
-  </tr>
 
-</table> 
   </div>`;
             this.shadowRoot.innerHTML += `<div id="key-container" class="">
 <table style='margin:1em auto;width:100%;table-layout: fixed;'>
