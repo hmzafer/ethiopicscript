@@ -2,7 +2,7 @@
         constructor() {
             super();
             if(this.getAttribute('height')) { var height = this.getAttribute('height'); }
-            else { var height = "300"; }
+            else { var height = "100"; }
             this.attachShadow({
                 mode: 'open'
             });
@@ -120,7 +120,27 @@
                 },
                 false
             );
+            
+            // Listener for Enter key
+            
+	    area.addEventListener(
+	        "keydown",
+	        (event) => {  
+ 		    if (event.key === "Enter") {
+		        // Optional: prevent newline creation if 'area' is a textarea
+		        event.preventDefault(); 
+		        // Dispatch custom event to notify parent HTML page
+		        this.dispatchEvent(new CustomEvent('submit-transcription', {
+		           bubbles: true,      // Allows event to bubble up through the DOM
+		           composed: true,     // Allows event to cross the Shadow DOM boundary
+		           detail: { text: area.value } // Optional payload
+		        }));
 
+		    }
+	        },
+	        false
+	    );
+	    
 
             var car;
 

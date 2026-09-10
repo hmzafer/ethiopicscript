@@ -49,8 +49,10 @@ banner: TheSyllables-wide.jpg
       <div id="quiz">
         <div id="progress"><div id="progress-bar"></div></div>
         <div id="card"></div>
-        <button id="check">Check</button>
-        <ethiopic-keyboard></ethiopic-keyboard>
+        <form id="transcriptionQuizForm">
+        <input type="submit" id="check" value="Check" />
+        <ethiopic-keyboard id="keyboard"></ethiopic-keyboard>
+        </form>
         <div id="counter">
            <span id="current">1</span> of 10
            <div id="incorrect">0</div>
@@ -137,6 +139,19 @@ deal(0);
 	  }
 	  e.preventDefault();
 	});
+	
+	function transcriptionCheck() {
+	   jQuery("#check").click();
+	}
+	
+const keyboard = document.getElementById("keyboard");
+
+  keyboard.addEventListener("submit-transcription", (event) => {
+      // Access payload via event.detail if passed
+      transcriptionCheck();
+  });
+
+	
 	
 /*
 	jQuery(document).on("keyup",kbd,function(e){
