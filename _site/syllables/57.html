@@ -2099,8 +2099,9 @@ async function loadGallery() {
     // Loop through data rows (skipping header row)
     for (let i = 1; i < rows.length; i++) {
       if (!rows[i] || rows[i].length < headers.length) continue;
-      const caption = rows[i][0]?.trim(); // Assuming column 1 is image URL
-      const imageUrl  = rows[i][1]?.trim(); // Assuming column 2 is caption
+      const ID = rows[i][0]?.trim(); // Assuming column 2 is image URL
+      const caption = rows[i][1]?.trim(); // Assuming column 2 is image URL
+      const imageUrl  = rows[i][2]?.trim(); // Assuming column 3 is caption
       
 
       if (imageUrl && caption == current_letter) {
@@ -2110,6 +2111,7 @@ async function loadGallery() {
         tileinner.classList.add('image-gallery-tile-inner');
         tile.appendChild(tileinner);
         const img = document.createElement('img');
+        img.title = ID;
         img.src = imageUrl;
         img.alt = caption || '';
         tileinner.appendChild(img);
