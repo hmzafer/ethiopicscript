@@ -126,6 +126,7 @@ async function loadGallery() {
 
     // Loop through data rows (skipping header row)
     for (let i = 1; i < rows.length; i++) {
+    console.log(rows);
       if (!rows[i] || rows[i].length < headers.length) continue;
       const ID = rows[i][0]?.trim(); // Assuming column 2 is image URL
       const caption = rows[i][1]?.trim(); // Assuming column 2 is image URL
